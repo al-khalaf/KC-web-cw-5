@@ -1,0 +1,54 @@
+.container{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: teal;
+    margin: 1px;
+    opacity: 0.8;
+    padding: 3px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    opacity:1;
+}
+
+.O{
+    width: 140px;
+    height: 140px;
+    border: 5px solid blue;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+
+.X {
+    height: 10px;
+    width: 160px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.X::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10;
+    right: 0;
+    content: "\274c"; /* use the hex value here... */
+    font-size: 124px; 
+    color: #FFF;
+    line-height: 150px;
+    text-align: center;
+}
